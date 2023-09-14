@@ -10,15 +10,13 @@ const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light")
   logo.href.baseVal = "img/sprite.svg#logo-light" 
 }
-const openMenu = (event) => { 
-  // функция открывания меня 
+const openMenu = (event) => {   // функция открывания меня 
   menu.classList.add('is-open'); // вешает класс "is open"
   mMenuToggle.classList.add('close-menu');
   document.body.style.overflow = "hidden"; // запрещаем прокрутку сайта под меню
   lightModeOn();
 }
-const closeMenu = (event) => { 
-  // функция закрытия меня 
+const closeMenu = (event) => {   // функция закрытия меня 
   menu.classList.remove('is-open'); // убирает класс "is open"
   mMenuToggle.classList.remove('close-menu');
   document.body.style.overflow = ""; // возвращаем прокрутку сайта под меню
