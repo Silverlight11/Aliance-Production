@@ -167,7 +167,7 @@ body {
   width: 18rem;
   padding: 1.75rem 3.125rem;
   border: 1px solid  rgba(235, 235, 240, 0.20);
-  min-height: 100%;
+  height: auto;
 }
 .slider-buttons {
   display: none;
@@ -256,6 +256,21 @@ body {
   margin-top: .625rem;
   margin-bottom: 1.25rem;
 }
+.steps-buttons {
+  display: none;
+  height: 40px;
+  justify-content: flex-end;
+}
+.steps-button-prev,
+.steps-button-next {
+  background: #5C8EE5;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -305,6 +320,9 @@ body {
     padding: 1rem;
   }
   .slider-buttons {
+    display: flex;
+  }
+  .steps-buttons {
     display: flex;
   }
 }
