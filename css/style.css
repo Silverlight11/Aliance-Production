@@ -355,6 +355,7 @@ body {
   transition: border 0.2s;
   display: flex;
   height: 17.5rem;
+  max-width: 100%;
 }
 .icon-mark {
   padding: 3.125rem;
