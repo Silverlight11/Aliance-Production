@@ -256,7 +256,7 @@ body {
   margin-top: 1.875rem;
   margin-bottom: .625rem;
 }
-.steps-link{
+.button-link{
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -265,7 +265,7 @@ body {
   font-weight: 600;
   line-height: 160%; 
 }
-.steps-link::before {
+.button-link::before {
   content: "";
   height: 1px;
   width: 2.5rem;
@@ -273,7 +273,7 @@ body {
   margin-right: 1.25rem;
   transition: width 0.2s;
 }
-.steps-link:hover:before {
+.button-link:hover:before {
   width: 3.75rem;
 }
 .steps-text {
@@ -392,6 +392,68 @@ body {
 .trademark-card:hover .trademark-card-title {
   color: #5C8EE5;
 }
+.founder {
+  position: relative;
+  min-height: 41.25rem;
+}
+.founder-photo {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+}
+.founder-content {
+  max-width: 45rem;
+}
+.founder-content-wraper {
+  display: flex;
+  justify-content: end;
+}
+.founder-text {
+  color: #828A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.clients-wraper {
+  display: flex;
+  gap: 3.125rem;
+}
+.clients-content {
+  flex-basis: 50%;
+}
+.clients-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+}
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292D33;
+}
+.client-list-icon {
+  width: 1.875rem;
+}
+.clients-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 10;
+}
+.clients-logo-item {
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -452,6 +514,12 @@ body {
   }
   .trademark-card {
     grid-template-columns: auto auto;
+  }
+  .founder-content {
+    max-width: 35rem;
+  }
+  .clients-content {
+    flex-basis: 60%;
   }
 }
 @media (max-width: 992px) {
@@ -602,6 +670,9 @@ body {
   .trademark-cards {
     flex-direction: column;
   }
+  .clients-wraper {
+    flex-direction: column;
+}
 }
 @media (max-width:768px) {
   .container {
@@ -616,6 +687,11 @@ body {
   .card {
     flex-basis: 100%;
   }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
 }
 @media (max-width:576px) {
   .container {
@@ -629,5 +705,11 @@ body {
   }
   .trademark-card {
     grid-template-areas: "logo title" "text text";
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .clients-logo-item {
+    flex-basis: 50%;
   }
 }
