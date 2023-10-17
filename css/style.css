@@ -453,6 +453,11 @@ body {
   display: flex;
   justify-content: center;
   padding: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+}
+.clients-logo-item:hover {
+  filter: grayscale(0%);
 }
 @media (max-width: 1700px) {
   html {
